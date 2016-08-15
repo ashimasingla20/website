@@ -1,0 +1,438 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
+
+/**  Basic Page CSS **/
+body{
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  margin: 0;
+}
+
+/**  Header Navigation **/
+
+header .navbar {
+  padding: 30px 0;
+  transition: all .5s ease-out;
+}
+
+header .navbar-default {
+  background-color: transparent;
+  border: none;
+}
+
+header .navbar-default .navbar-nav a {
+  color: white;
+  padding: 5px 8px;
+}
+
+header .navbar-default .navbar-nav a:hover {
+  color: #EEC856;
+}
+
+header .navbar-default .navbar-nav .active a {
+  font-weight: 700;
+  color: #EEC856;
+  background: transparent;
+  border-bottom: 4px solid #EEC856;
+  text-shadow: none;
+}
+
+header .navbar-default .navbar-nav .active a:hover {
+  color: #E15D5F;
+  background: transparent;
+  text-shadow: none;
+}
+
+/**  Navbar Brand **/
+
+header .navbar-brand {
+  background: url(../images/wisdompetlogo.svg);
+  background-repeat: no-repeat;
+  background-position: 15px 0;
+  height: auto;
+}
+
+header .navbar-brand h1 {
+  color: white;
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: 400;
+  padding-left: 105px;
+}
+
+header .navbar-brand span.subhead {
+  display: block;
+  font-family: "Roboto Slab", serif;
+  font-size: .6em;
+  font-weight: 100;
+}
+
+/**  Navbar Toggle **/
+header .navbar-toggle {
+  background-color: #279182;
+}
+
+header .navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+@media only screen
+and (max-width: 768px) {
+  header .navbar-collapse.in {
+    background-color: rgba(0,0,0, .5);
+  }
+}
+
+/**  nav inbody **/
+.home-inner {
+    padding: 57px 100px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+
+}
+.home-text{
+    font-family: 'opensans-bold', 'sans-serif';
+    color: #fff;
+    margin: 0 auto 18px auto;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+    font-size: 90px;
+}
+
+ #home p{
+    font: 18px 'librebaskerville-regular', serif;
+    color: #A8A8A8;
+ }
+
+header .inbody {
+  background: rgba(104,73,49,.9);
+}
+
+header .navbar.inbody {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+header .navbar.inbody .navbar-nav {
+  padding-top: 10px;
+}
+
+header .inbody .navbar-brand {
+  background-size: 43px;
+  background-position: top left;
+  margin-top: 5px;
+  padding-bottom: 0;
+  margin-left: 10px;
+}
+
+header .inbody .navbar-brand h1 {
+  font-size: 1.1em;
+  padding-left: 38px;
+}
+
+header .inbody .navbar-brand span.subhead {
+  display: none;
+}
+#home{
+    background: #161415 url(../images/header-background.jpg) no-repeat top center;
+}
+
+/**  Carousel Fade **/
+
+
+
+#featured .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+
+/**  Page **/
+.page {
+  padding: 50px 0;
+}
+
+.page h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/**  Page -- Mission **/
+#mission {
+  background-color: #E4D29D;
+  background-image: linear-gradient(to bottom, #EEF08A, #819A2D);
+  border-top: 20px solid rgba(238, 200, 86, .5);
+}
+
+/**  Page -- about **/
+
+#about{
+    background-color: #2B2B2B;
+}
+#about p{
+    line-height: 30px;
+   
+}
+.profile-img{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+}
+#about h2 {
+    font: 22px 'opensans-bold', sans-serif;
+    margin-bottom: 12px;
+    float:left;
+    color: #fff;
+}
+#about p{
+    clear:both;
+
+}
+#services img.icon {
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+
+#services h3 {
+  margin-bottom: 10px;
+}
+.columns{
+    float: left;
+    position: relative;
+    padding-left: 20px;
+}
+#about .download .button {
+    margin-top: 6px;
+    background: #444;
+}
+.button, .button:visited, button, input[type="submit"], input[type="reset"], input[type="button"] {
+    font: 16px/30px 'opensans-bold', sans-serif;
+    background: #11ABB0;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 0;
+    color: #fff;
+    padding: 12px 20px;
+    margin-bottom: 18px;
+    border: none;
+    cursor: pointer;
+    height: auto;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+}
+#about a{
+    color:#fff;
+}
+@media only screen 
+and (min-width: 450px)
+and (max-width: 768px) {
+  .service p {
+    padding: 0 20%;
+  }
+}
+.download a:hover{
+    text-decoration: none;
+}
+
+/**  Page -- Staff **/
+
+#skills {
+  background-color: #E4D29D;
+  background-image: linear-gradient(to bottom, #E4D29D, #CDAE50);
+}
+
+
+progress {
+    background-color: black;
+    border: 0;
+    height: 1.5em;
+    width: 100%;
+}
+
+#skills span {
+    top: -55px;
+    left: 2%;
+    position: relative;
+    font-size: 1.0em;
+    font-weight: bolder;
+    font-family: monospace;
+    color: #fff;
+}
+/**  Page -- Testimonials **/
+
+#testimonials {
+  padding: 0;
+}
+
+#testimonials h2 {
+  display: none;
+}
+
+#testimonials blockquote {
+  margin: 0;
+  padding: 0;
+  border-left: none;
+  min-height: 500px;
+  position: relative;
+}
+
+#testimonials blockquote .quote {
+  background-color: rgba(255,255,255,.6);
+  padding: 20px 5%;
+  position: absolute;
+  bottom: 0;
+  width: 75%;
+  font-weight: 400;
+  border-radius: 0 50px 0 0;
+}
+
+#testimonials blockquote .quote:hover {
+  background-color: rgba(239,240,196,.9);
+}
+
+#testimonials #janeh {
+  background: url(../images/testimonial-janeh.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#testimonials #johnb {
+  background: url(../images/testimonial-johnb.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#testimonials #mcphersons {
+  background: url(../images/testimonial-mcphersons.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#testimonials #lorraines {
+  background: url(../images/testimonial-lorraines.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#testimonials .quote {
+  font-size: 1.2em;
+  line-height: 110%;
+  font-weight: 400;
+}
+
+
+#testimonials .quote .more, #testimonials .customer {
+  opacity: 0;
+  font-size: 0;
+  line-height: 0;
+  padding-top: 10px;
+}
+
+
+#testimonials .quote:hover .more {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  display: block;
+  opacity: 1;
+  font-size: .8em;
+  line-height: 120%;
+}
+
+#testimonials .quote:hover .customer {
+  display: block;
+  font-size: .7em;
+  text-align: right;
+}
+
+#testimonials .quote .intro::after {
+  content: '...';
+}
+
+#testimonials .quote:hover .intro::after {
+  content: '';
+}
+
+/**  Footer **/
+
+footer {
+  background: #586D74;
+  color: white;
+  font-size: .8em;
+  padding: 20px 0 40px 0;
+}
+
+footer a {
+  color: #E0E6AE;
+}
+
+footer a:hover {
+  color: #EEC856 !important;
+}
+
+footer .phone {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #E0E6AE;
+}
+
+footer .navbar {
+  margin-bottom: 0;
+  min-height: 0;
+}
+
+footer .navbar-default {
+  background-color: transparent;
+  border: none;
+  margin-right: 40px;
+}
+
+footer .navbar-nav>li a {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-decoration: underline;
+  color: #EEC856 !important;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.button1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+.button1{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.container {
+    width: 90%;
+}
+
