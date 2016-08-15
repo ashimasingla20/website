@@ -277,6 +277,106 @@ progress {
     font-family: monospace;
     color: #fff;
 }
+/*portfolio */
+#portfolio h1 {
+    font: 15px/24px 'opensans-semibold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 48px;
+    color: #95A3A3;
+}
+#portfolio {
+    background: #ebeeee;
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+#portfolio.row {
+    width: 96%;
+    max-width: 1020px;
+    margin: 0 auto;
+    display: inline-block;
+}
+.portfolio-item{
+    position: relative;
+    padding: 0 20px;
+    min-height: 1px;
+
+}
+/*#item-wrap{
+    width:33%;
+    padding:10px;
+    float:left;
+    height: 235px;
+
+}
+.portfolio-item img{
+    width:100%;
+    height:100%;
+}
+ #description-box {
+  background: #000;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  transition: opacity .5s;
+}
+#description-box p {
+  color:#000;
+  line-height: 150px;
+  font-family: 'arial';
+  text-align: center;
+}
+#description-box:hover{
+  opacity: .9;
+
+  transition: opacity .5s;
+}*/
+#item-wrap {
+  width: 30%;
+  height: 235px;
+  float:left;
+  position: relative;
+  margin-left:10px;
+  margin-right: 10px;
+}
+/* line 9, ../sass/style.scss */
+#item-wrap img {
+  width: 100%;
+  height: 100%;
+  float:left;
+}
+/* line 14, ../sass/style.scss */
+#item-wrap #description-box {
+  background: #FD8698;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  transition: opacity .5s;
+  padding-left:20px;
+  padding-right:20px;
+}
+/* line 25, ../sass/style.scss */
+#item-wrap #description-box p {
+  color: #fff;
+  line-height: 150px;
+  font-family: 'arial';
+  text-align: center;
+}
+/* line 34, ../sass/style.scss */
+#item-wrap:hover #description-box {
+  opacity: .9;
+  transition: opacity .5s;
+}
+
 /**  Page -- Testimonials **/
 
 #testimonials {
@@ -369,8 +469,11 @@ progress {
 
 /**  Footer **/
 
+#contact{
+    background: #586D74;
+    width:100%;
+}
 footer {
-  background: #586D74;
   color: white;
   font-size: .8em;
   padding: 20px 0 40px 0;
