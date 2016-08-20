@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <script src="js/prefixfree.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -46,12 +47,21 @@
   <div class="page" id="home">
     <div class="content container">
         <div class="row">
-        <div class="home-inner">
+            <div class="home-inner">
             <h1 class="home-text">Ashima Singla</h1>      
-     
-        <p >Passionate about creating products that matter. <br/>Front End Developer - Coder - Learner </p>
-      </div>
-    </div>
+            <p >Passionate about creating products that matter. <br/>Front End Developer - Coder - Learner </p>
+            </div>
+        </div>
+        <div class="row">
+        <ul class="social">
+               <li><a href="https://www.linkedin.com/in/ashima-singla-453267102?trk=nav_responsive_tab_profile"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/coder20"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://www.facebook.com/ashima.singla.923"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://www.hackerrank.com/ASHIMA20"><i class="fa fa-code "></i></a></li>
+               
+            </ul>
+        </div>
+  </div>
   </div>
 
 <div class="page" id="about">
@@ -108,84 +118,159 @@
 
 
 <div class="page" id="portfolio">
-    <div class="container-fluid">
+    <div class="container-fluid clearfix">
         <h1>Check Out Some of My Works.</h1>
         <div class="row">
             <div class="portfolio-item">
                 <div id="item-wrap">
+                <a href="#modal-01">
                 <img src="images/trend_analysis.png" alt=" " >
                 <div id="description-box">
                     <p>Twitter Trend Analysis</p>
                    <!--  <p>Analysis the common trends in the selected counties</p> -->
+                </a>
                 </div>
                 </div>
             </div>
             <div class="portfolio-item">
                   <div id="item-wrap">
-                <img src="images/github_card_component.png" alt=" ">
-                  <div id="description-box">
-                    <p>Github Card Component</p>
-                   <!--  <p>Analysis the common trends in the selected counties</p> -->
+                    <a href="#modal-02">
+                        <img src="images/github_card_component.png" alt=" ">
+                        <div id="description-box">
+                        <p>Github Card Component</p>
+                   </a>
                    </div>
                 </div>
             </div>
             <div class="portfolio-item">
                 <div id="item-wrap">
-                <img src="images/Html.png" alt=" ">
-                <div id="description-box">
+                <a href="#modal-03">
+                    <img src="images/Html.png" alt=" ">
+                    <div id="description-box">
                     <p>Springboard Live Site</p>
                    <!--  <p>Analysis the common trends in the selected counties</p> -->
+                </a>
                 </div>
                 </div>
             </div>
         </div>
 
-          <div class="row">
+        <div class="row">
             <div class="portfolio-item">
                 <div id="item-wrap">
-                <img src="images/Sanromedia.png" alt=" " >
-                <div id="description-box">
+                <a href="#modal-04">
+                    <img src="images/Sanromedia.png" alt=" " >
+                    <div id="description-box">
                     <p>Sanromedia Live site</p>
-                   <!--  <p>Analysis the common trends in the selected counties</p> -->
+                </a>
                 </div>
                 </div>
             </div>
             <div class="portfolio-item">
                   <div id="item-wrap">
-                <img src="images/jquery_slider.png" alt=" ">
-                  <div id="description-box">
-                    <p>Jquery Image Slider</p>
+                    <a href="#modal-05">
+                        <img src="images/jquery_slider.png" alt=" ">
+                        <div id="description-box">
+                        <p>Jquery Image Slider</p>
                    <!--  <p>Analysis the common trends in the selected counties</p> -->
+                    </a>
                    </div>
                 </div>
             </div>
             <div class="portfolio-item">
                 <div id="item-wrap">
-                <img src="images/Weather_scrapper.png" alt=" ">
-                <div id="description-box">
+                 <a href="#modal-06">
+                    <img src="images/Weather_scrapper.png" alt=" ">
+                    <div id="description-box">
                     <p>Weather Scrapper</p>
+                </a>
                    <!--  <p>Analysis the common trends in the selected counties</p> -->
                 </div>
                 </div>
             </div>
-        </div>
-</div>
-       <!--  <div class="row">
-            <div class="portfolio-item">
-                <img src="images/sanromedia.png" alt=" " width="33%" height="235px">
-            </div>
-            <div class="portfolio-item">
-                <img src="images/jquery_slider.png" alt=" " width="33%" height="235px">
-            </div>
-            <div class="portfolio-item">
-                <img src="images/Weather_scrapper.png" alt=" " width="33%">
-            </div>
-        </div>
     </div>
 
-</div>
- -->
+    <div id="modal-01" class="popup-modal mfp-hide">
+    <img class="scale-with-grid" src="images/trend_analysis.png" alt="" />
+    <div class="description-box">
+        <h4>Twitter Trends Analysis</h4>
+        <p>Analysis and plotting of common trends amoung the countries selected in dropdown in form of pie chart using d3.js</p>
+        <span class="categories"><i class="fa fa-tag"></i>HTML,CSS,Javascript,Jquery,Ajax,D3.js</span>
+    </div>
+    <div class="link-box">
+        <a href="http://www.behance.net">Details</a>
+        <a class="popup-modal-dismiss">Close</a>
+    </div>
 
+    </div>
+    <div id="modal-02" class="popup-modal mfp-hide">
+    <img class="scale-with-grid" src="images/github_card_component.png" alt="" />
+    <div class="description-box">
+        <h4>Github Card Component </h4>
+        <p>Displays a card showing user's detail according to login id input by user including the image on github,location and followers using react js </p>
+        <span class="categories"><i class="fa fa-tag"></i>ReactJs,HTML,CSS,AJAX</span>
+    </div>
+    <div class="link-box">
+        <a href="http://www.behance.net">Details</a>
+        <a class="popup-modal-dismiss">Close</a>
+    </div>
+
+    </div>
+
+    <div id="modal-03" class="popup-modal mfp-hide">
+    <img class="scale-with-grid" src="images/Html.png" alt="" />
+    <div class="description-box">
+        <h4>SpringBoard Live site </h4>
+        <p>Created a static site using html and css. Converting the given psd to live site</p>
+        <span class="categories"><i class="fa fa-tag"></i>Photoshop,HTML,CSS</span>
+    </div>
+    <div class="link-box">
+        <a href="http://www.behance.net">Details</a>
+        <a class="popup-modal-dismiss">Close</a>
+    </div>
+
+    </div>
+    <div id="modal-04" class="popup-modal mfp-hide">
+    <img class="scale-with-grid" src="images/Sanromedia.png" alt="" />
+    <div class="description-box">
+        <h4>Sanromedia Live Site</h4>
+        <p>Created the complete frontend of this project named sanromedia</p>
+        <span class="categories"><i class="fa fa-tag"></i>HTML,CSS,Bootstrap,Javascript,Jquery</span>
+    </div>
+    <div class="link-box">
+        <a href="http://www.behance.net">Details</a>
+        <a class="popup-modal-dismiss">Close</a>
+    </div>
+
+    </div>
+    <div id="modal-05" class="popup-modal mfp-hide">
+    <img class="scale-with-grid" src="images/jquery_slider.png" alt="" />
+    <div class="description-box">
+        <h4>Image Slider</h4>
+        <p>A simple Jquery Image slider using HTML,CSS,Javascipt and Jquery </p>
+        <span class="categories"><i class="fa fa-tag"></i>HTML,CSS,Javascript,Jquery</span>
+    </div>
+    <div class="link-box">
+        <a href="http://www.behance.net">Details</a>
+        <a class="popup-modal-dismiss">Close</a>
+    </div>
+
+    </div>
+    <div id="modal-06" class="popup-modal mfp-hide">
+    <img class="scale-with-grid" src="images/Weather_scrapper.png" alt="" />
+    <div class="description-box">
+        <h4>Weather Predictor</h4>
+        <p>Created a simple site for weather prediction using scrapping</p>
+        <span class="categories"><i class="fa fa-tag"></i>HTML,CSS,PHP and Regex</span>
+    </div>
+    <div class="link-box">
+        <a href="http://www.behance.net">Details</a>
+        <a class="popup-modal-dismiss">Close</a>
+    </div>
+
+    </div>
+
+</div><!-- portfolio end -->
 <div id ="contact">
 <footer >
   <div class="content container-fluid">
@@ -193,11 +278,11 @@
       <div class="col-sm-6">
        <div class="input-field col s12">
           <input id="password" type="text" class="validate">
-          <label for="password">Name</label>
+          <label for="Name">Name</label>
         </div>
         <div class="input-field col s12">
           <input id="password" type="text" class="validate">
-          <label for="password">Contact</label>
+          <label for="Contact">Contact</label>
         </div>
         <div class="input-field col s12">
           <textarea id="textarea1" class="materialize-textarea"></textarea>
@@ -216,9 +301,23 @@
   </div><!-- content container -->
 </footer>
 </div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script src="js/myscript.js"></script>
 <script src="js/materialize.min.js"></script>
+ <script src="js/core.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script>
+    $('#item-wrap a').magnificPopup({
+
+       type:'inline',
+       fixedContentPos: false,
+       removalDelay: 200,
+       showCloseBtn: false,
+       mainClass: 'mfp-fade'
+
+    });
+</script>
 </body>
 </html>
