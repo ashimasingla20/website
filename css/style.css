@@ -81,6 +81,20 @@ header .navbar-toggle {
 header .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
 }
+.social {
+   margin: 24px 0;
+   padding: 0;
+   font-size: 30px;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+   text-align: center;
+}
+ .social li {
+   display: inline-block;
+   margin: 0 15px;
+   padding: 0;
+}
+.social li a { color: #fff; }
+.social li a:hover { color: #11ABB0; }
 
 @media only screen
 and (max-width: 768px) {
@@ -180,6 +194,8 @@ header .inbody .navbar-brand span.subhead {
 }
 #about p{
     line-height: 30px;
+    font: 18px 'librebaskerville-regular', serif;
+    color: #A8A8A8;
    
 }
 .profile-img{
@@ -290,6 +306,7 @@ progress {
     background: #ebeeee;
     padding-top: 90px;
     padding-bottom: 60px;
+    overflow: hidden;
 }
 #portfolio.row {
     width: 96%;
@@ -297,12 +314,61 @@ progress {
     margin: 0 auto;
     display: inline-block;
 }
+#portfolio a{
+    text-decoration: none;
+}
 .portfolio-item{
     position: relative;
     padding: 0 20px;
     min-height: 1px;
 
 }
+/* popup modal */
+.popup-modal {
+    max-width: 550px;
+    background: #fff;
+    position: relative;
+    margin: 0 auto;
+}
+.popup-modal img{
+    width:100%;
+}
+.popup-modal .description-box { padding: 12px 36px 18px 36px; }
+.popup-modal .description-box h4 {
+   font: 15px/24px 'opensans-bold', sans-serif;
+    margin-bottom: 12px;
+   color: #111;
+}
+.popup-modal .description-box p {
+    font: 14px/24px 'opensans-regular', sans-serif;
+   color: #A1A1A1;
+   margin-bottom: 12px;
+}
+.popup-modal .description-box .categories {
+   font: 11px/21px 'opensans-light', sans-serif;
+   color: #A1A1A1;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   display: block;
+   text-align: left;
+}
+.popup-modal .description-box .categories i {
+   margin-right: 8px;
+}
+.popup-modal .link-box {
+   padding: 18px 36px;
+   background: #111;
+   text-align: left;
+}
+.popup-modal .link-box a {
+   color: #fff;
+    font: 11px/21px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+   letter-spacing: 3px;
+   cursor: pointer;
+}
+.popup-modal a:hover {  color: #00CCCC; }
+.popup-modal a.popup-modal-dismiss { margin-left: 24px; }
 /*#item-wrap{
     width:33%;
     padding:10px;
@@ -352,7 +418,7 @@ progress {
 }
 /* line 14, ../sass/style.scss */
 #item-wrap #description-box {
-  background: #FD8698;
+  background: url(../images/overlay-bg.png) repeat;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -537,5 +603,13 @@ footer .navbar-nav>li a {
 
 .container {
     width: 90%;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
 }
 
