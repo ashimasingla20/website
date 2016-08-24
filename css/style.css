@@ -313,6 +313,7 @@ progress {
     max-width: 1020px;
     margin: 0 auto;
     display: inline-block;
+    overflow: hidden;
 }
 #portfolio a{
     text-decoration: none;
