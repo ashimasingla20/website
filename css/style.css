@@ -105,7 +105,7 @@ and (max-width: 768px) {
 
 /**  nav inbody **/
 .home-inner {
-    padding: 57px 100px;
+    padding-top:100px;
     text-align: center;
     position: relative;
     width: 100%;
@@ -155,6 +155,8 @@ header .inbody .navbar-brand span.subhead {
 }
 #home{
     background: #161415 url(../images/header-background.jpg) no-repeat top center;
+    background-size: cover;
+    display: flex;
 }
 
 /**  Carousel Fade **/
@@ -197,6 +199,12 @@ header .inbody .navbar-brand span.subhead {
     font: 18px 'librebaskerville-regular', serif;
     color: #A8A8A8;
    
+}
+.container-fluid{
+    display: flex;
+    display: -webkit-flex;
+    flex-flow:column;
+
 }
 .profile-img{
     height: 250px;
@@ -293,6 +301,81 @@ progress {
     font-family: monospace;
     color: #fff;
 }
+/*card*/
+figure{
+    margin:0px;
+}
+.card {
+    background: white;
+    margin-bottom: 2em; 
+}
+
+.card a {
+    color: black;
+    text-decoration: none;
+}
+
+.card a:hover {
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+.card-content {
+    padding: 1.4em;
+}
+
+.card-content h2 {
+    display: flex;
+    font-size: 0.8em;
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: normal;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card-content p {
+    font-size: 95%;
+}
+
+/* Flexbox stuff */
+
+@media screen and (min-width: 40em) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .card {
+        display: flex;
+        flex: 0 1 calc(50% - .5em);
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .cards {
+        margin-top: inherit;
+    }
+    
+    .card {
+        flex: 0 1 calc(33% - 1em);
+        margin-bottom: 2em;
+    }
+}
+.centered {
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+@media screen and (min-width: 52em) {
+    .centered {
+        max-width: 52em;
+    }
+}
 /*portfolio */
 #portfolio h1 {
     font: 15px/24px 'opensans-semibold', sans-serif;
@@ -314,11 +397,27 @@ progress {
     margin: 0 auto;
     display: inline-block;
     overflow: hidden;
+    display: flex;
+    justify-content:space-around;
+    /*flex-wrap:wrap;*/
 }
 #portfolio a{
     text-decoration: none;
 }
 .portfolio-item{
+   /* display: -webkit-flex;*/
+    /*-webkit-flex: 1;
+    -ms-flex:1;*/
+    /*flex:1;*/
+    /*justify-content:space-around;
+    flex-wrap:wrap;*/
+    /*-webkit-flex-flow: row;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    flex-direction: column;*/
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
     position: relative;
     padding: 0 20px;
     min-height: 1px;
@@ -404,21 +503,47 @@ progress {
   transition: opacity .5s;
 }*/
 #item-wrap {
+ /*flex:0 0 33%;*/
+ /* display: flex;*/
+ /* display: -webkit-flex;
+  -webkit-flex: 1;
+  -ms-flex:1;
+  flex:1;
+  -webkit-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    flex-direction: column;*/
+  /*-webkit-align-items: center;
+  -ms-flex-pack: center;
+   align-items: center;*/
   width: 30%;
   height: 235px;
-  float:left;
+  /*float:left;*/
   position: relative;
   margin-left:10px;
   margin-right: 10px;
+  margin-bottom: 50px;
 }
 /* line 9, ../sass/style.scss */
 #item-wrap img {
   width: 100%;
   height: 100%;
-  float:left;
+  /*-webkit-flex: 1;
+  -ms-flex:1;
+  flex:1;*/
+  
 }
 /* line 14, ../sass/style.scss */
 #item-wrap #description-box {
+  /*display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;  
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;  
+  justify-content: space-around;*/
   background: url(../images/overlay-bg.png) repeat;
   height: 100%;
   width: 100%;
@@ -431,17 +556,37 @@ progress {
   padding-left:20px;
   padding-right:20px;
 }
+
+.card-content p {
+    text-color:black;
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: normal;
+    background: white;
+    border-top:1px solid black;
+}
 /* line 25, ../sass/style.scss */
-#item-wrap #description-box p {
-  color: #fff;
-  line-height: 150px;
+#item-wrap p {
+  color: black;
+  font-size: 20px;
   font-family: 'arial';
   text-align: center;
+  margin-bottom: 2em;   
 }
 /* line 34, ../sass/style.scss */
 #item-wrap:hover #description-box {
   opacity: .9;
   transition: opacity .5s;
+}
+.centered {
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+@media screen and (min-width: 52em) {
+    .centered {
+        max-width: 52em;
+    }
 }
 
 /**  Page -- Testimonials **/
