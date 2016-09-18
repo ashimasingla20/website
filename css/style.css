@@ -190,9 +190,187 @@ header .inbody .navbar-brand span.subhead {
 }
 
 /**  Page -- about **/
-
 #about{
     background-color: #2B2B2B;
+    display: flex;
+    -webkit-display:flex;
+    -ms-display:flex;
+    flex-wrap:wrap;
+}
+@media only screen and (min-width: 826px){
+#about .width{
+    width:1048px;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    flex-wrap:wrap;
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-around;
+}
+.inner-left{
+    display: flex;
+    display: -webkit-flex;
+    flex:1;
+    margin-left: 1em;
+    align-items:center;
+    justify-content: center;
+    order:0;
+}
+.inner-right{
+    width: 850px;
+    display: flex;
+    display: -webkit-flex;
+    flex:3;
+    /*margin-right: 50px;*/
+    order:1;
+   /* justify-content:flex-end;
+    align-item:flex-end;*/
+    /*-webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;*/
+}
+}
+#about p{
+    line-height: 30px;
+    font: 18px 'librebaskerville-regular', serif;
+    color: #A8A8A8;
+   
+}
+#about.row-centered {
+    width: 96%;
+    max-width: 1020px;
+    overflow: hidden;
+    display: flex;
+    
+    /*flex-wrap:wrap;*/
+}
+.container-fluid{
+    display: flex;
+    display: -webkit-flex;
+    flex-flow:column;
+    
+
+}
+
+.header{
+    display: flex;
+    -webkit-align-items:center;
+    /*-ms-flex-pack: baseline;*/
+    align-items: center;
+}
+.profile-img{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    /*float:left;*/
+}
+#about h2 {
+    display:flex;
+    font: 22px 'opensans-bold', sans-serif;
+    margin-bottom: 12px;
+    float:left;
+    color: #fff;
+}
+#about p{
+    clear:both;
+
+}
+
+
+#services h3 {
+  margin-bottom: 10px;
+}
+.columns{
+    float: left;
+    position: relative;
+}
+#about .download .button {
+    clear: both;
+    margin-top: 60px;
+    background: #444;
+    margin-left: 20px;
+}
+.button, .button:visited, button, input[type="submit"], input[type="reset"], input[type="button"] {
+    font: 16px/30px 'opensans-bold', sans-serif;
+    background: #11ABB0;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 0;
+    color: #fff;
+    padding: 12px 20px;
+    margin-bottom: 18px;
+    border: none;
+    cursor: pointer;
+    height: auto;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+}
+#about a{
+    color:#fff;
+}
+
+@media only screen and (max-width: 826px) {
+.inner-left{
+    width:75%;
+    order:0;
+    display: flex;
+    display: -webkit-flex;
+    flex:1;
+    margin-left: 1em;
+    align-items:center;
+    justify-content: center;
+}
+.inner-right{
+
+    width:100%;
+    order:1;
+    margin-left:20px;
+    flex-wrap:wrap;
+    display: flex;
+}
+#about .download .button{
+   clear:both;
+   width:100%;
+   text-align: center;
+   margin-left:0px auto;
+    margin-right:0px auto;
+}
+  
+}
+.download a:hover{
+    text-decoration: none;
+}
+.m20{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+/*@media only screen and (max-width: 720px) {
+  .profile-img{
+    display: none;
+
+  }
+}*/
+/*@media only screen and (max-width: 789px){
+#about .download .button{
+    width: 100%;
+    text-align: center;
+    padding: 15px 20px;
+}
+}*/
+
+/*#about{
+    background-color: #2B2B2B;
+    display: flex;
+    -webkit-display:flex;
+    -ms-display:flex;
 }
 #about p{
     line-height: 30px;
@@ -275,7 +453,7 @@ and (max-width: 768px) {
 }
 .download a:hover{
     text-decoration: none;
-}
+}*/
 
 /**  Page -- Staff **/
 
@@ -685,12 +863,42 @@ figure{
     background: #586D74;
     width:100%;
 }
+#contact .row{
+    with:96%;
+}
 footer {
   color: white;
   font-size: .8em;
   padding: 20px 0 40px 0;
 }
+.content_flex{
+    display: flex;
+    flex-wrap:wrap;
+}
+@media screen and (min-width: 560px) {
+.message{
+    flex:2 1;
+    justify-content:flex-end;
+    flex:wrap;
+    margin-left: 20px;
 
+}
+.map{
+    flex:1 ;
+    justify-content:flex-start;
+    flex:wrap;
+    padding-right: 40px;
+
+}
+}
+@media only screen and (max-width: 560px){
+    .map{
+        display: flex;
+        justify-content:center;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
 footer a {
   color: #E0E6AE;
 }
